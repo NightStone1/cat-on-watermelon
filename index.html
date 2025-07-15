@@ -27,5 +27,12 @@
   <img src="kitty.jpg" alt="Cat" />
   <h1>Кот на арбузе 🐱</h1>
   <br>
+  <button onclick="changeColor()">Сделать фон веселее!</button>
+
+  <script>
+    function changeColor() {
+      document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    }
+  </script>
 </body>
 </html>
